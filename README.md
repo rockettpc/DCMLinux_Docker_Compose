@@ -1,8 +1,25 @@
 # DCMLinux_Docker_Compose
 Docker compose files for rapidly reploying DCMLinux bundles with DCM4CHEE
 
-To start up run start.sh
+PreReq: </br>
+Install Docker: https://docs.docker.com/engine/install/ubuntu/ </br>
+Install Docker-Compose: https://docs.docker.com/compose/install/ </br>
+sudo apt install getsome </br>
+sudo git clone https://github.com/DCMLinux/DCMLinux_Docker_Compose.git </br>
 
-To stop the containers use stop.sh
+Configure:</br>
+cd DCMLinux_Docker_Compose </br>
+sudo nano docker-compose.env - apply any changes such as username & password </br>
+sudo nano docker-compose.yml - apply any changes such as username & password </br>
 
-To check live logs (tail) run checklogs.sh
+Deploy & Start: </br>
+sudo sh start.sh </br>
+
+Stop: </br>
+sudo sh stop.sh </br>
+
+Update: </br>
+sudo sh update.sh </br>
+
+Check Logs: </br>
+sudo sh checklogs.sh </br>
